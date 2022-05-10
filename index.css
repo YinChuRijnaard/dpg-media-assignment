@@ -1,0 +1,115 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial;
+}
+
+/* Colors */
+:root {
+  --red: #c31a20;
+  --grey: #eeeeee;
+  --yellow: #efd345;
+}
+
+/* Body */
+body {
+  padding: 0.5em;
+}
+
+/* Header Section */
+header {
+  background: var(--red);
+  color: white;
+  font-size: 24px;
+  padding: 1em;
+  width: 100%;
+}
+
+/* Tabs Section */
+.tabs {
+  background: var(--grey);
+  display: flex;
+  padding: 1em;
+}
+
+.tabs > p:first-child {
+  color: var(--red);
+}
+
+.tabs > p + p {
+  margin-left: 25px;
+}
+
+/* Articles Section */
+.article {
+  background: var(--grey);
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.article-div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.article-div > p {
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  font-size: 14px;
+}
+
+.article-span {
+  background: var(--yellow);
+  width: 2.5px;
+  height: 20px;
+}
+
+/* With Picture */
+.article-pic {
+  font-family: sans-serif;
+  font-size: 10px;
+  background: var(--yellow);
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* With Video */
+.article-vid {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: white;
+  background: var(--red);
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.svg-vid {
+  fill: white;
+}
+
+/* Button */
+button {
+  background: none;
+  color: var(--red);
+  width: 100%;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+/* Media query */
+@media (min-width: 768px) {
+  body {
+    width: 50%;
+    margin: auto;
+  }
+}
